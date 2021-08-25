@@ -12,6 +12,7 @@ header{
     padding: 2%;
     position: fixed;
     width: 100%;
+    z-index: 123456789;
 }
 .main-div{
     background-color: red;
@@ -34,4 +35,22 @@ header{
 }
 .box-selection{
     margin-bottom: 2vh;
+}
+
+.pregunta{
+    display: none;
+    position: fixed;
+    background-color: black;
+    z-index: 900;
+    width: 100vw;
+    height: 100vh;
+}
+
+.pregunta.agrego{
+    display: flex;
+    position: fixed;
+    background-color: black;
+    z-index: 900;
+    width: 100vw;
+    height: 100vh;
 }

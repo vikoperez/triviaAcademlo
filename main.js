@@ -1,5 +1,6 @@
 // https://opentdb.com/api.php?amount=8&category=24&difficulty=medium&type=multiple
 let triviaForm = document.getElementById("triviaForm");
+let users = [];
 
 const crearApiUrl = e => {
     e.preventDefault();
@@ -31,5 +32,21 @@ const showQuestion = () => {
         console.log(`Dificultad : ${question.difficulty}`)
         console.log(`Categoría: ${question.category}`)
     });
+}
+
+const renderList = () =>{
+    contenedor.innerHTML= "";
+    if (users.length > 0){
+        users.forEach(pregunta =>{
+            const contenedorPregunta = document.createElement("form");
+            contenedorPregunta.action.add("");
+            contenedorPregunta.classList.add("pregunta")
+
+            const labelPregunta = document.createElement("label")
+            labelPregunta.innerText.add("QUESTION!")
+
+            const seleccionarPregunta = document.createElement("selec")
+        })
+    }
 }
 triviaForm.onsubmit = crearApiUrl;
