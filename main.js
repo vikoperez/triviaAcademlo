@@ -23,4 +23,13 @@ const fillQuestions = questionsAPI => {
     showQuestion();
 };
 
+const showQuestion = () => {
+    questions.forEach(question => {
+        console.log(`Preunta: ${question.question}`);
+        console.log(`Respuesta correcta: ${question.correct_answer}`);
+        console.log(`Respuestas incorrectas: ${question.incorrect_answers}`);
+        console.log(`Dificultad : ${question.difficulty}`)
+        console.log(`Categoría: ${question.category}`)
+    });
+}
 triviaForm.onsubmit = crearApiUrl;
