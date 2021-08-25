@@ -18,4 +18,9 @@ const fetchDataApi = url => {
     .catch (err => console.log(err));
 };
 
+const fillQuestions = questionsAPI => {
+    questions = questionsAPI;
+    showQuestion();
+};
+
 triviaForm.onsubmit = crearApiUrl;
