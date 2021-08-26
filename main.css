@@ -48,9 +48,41 @@ header{
 
 .pregunta.agrego{
     display: flex;
+    flex-direction: column;
     position: fixed;
     background-color: black;
     z-index: 900;
     width: 100vw;
     height: 100vh;
+    align-items: center;
+    justify-content: center;
+    color: wheat;
+}
+
+.contenedor-flechas{
+    display: flex;
+    justify-content: space-between;
+    width: 30vh;
+
+}
+.flechas{
+    width: 50px;
+    height: 50px;
+    
+}
+.flecha-izquierda{
+    display: flex;
+    flex-direction: column;
+}
+
+.flecha-derecha{
+    display: flex;
+    flex-direction: column;
+}
+.pregunta-titulo{
+    margin-bottom: 10px;
+}
+
+.espacio-botton{
+    margin-bottom: 10px;
 }
