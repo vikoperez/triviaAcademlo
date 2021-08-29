@@ -43,7 +43,7 @@ const showQuestion = () => {
             pregunta.innerHTML =`
             
             <div class="contenedor-preguntas">
-                <h2 class="pregunta-titulo">QUESTION!</h2>
+                <h2 class="pregunta-titulo">Q U E S T I O N !</h2>
                 <div class= "preguntas-centradas">
                     <label class="espacio-botton">${questions[i].question}</label>
                     <div class="espacio-botton">
@@ -55,14 +55,14 @@ const showQuestion = () => {
                 </div>
             </div>
             <p>Let's go! your escore is: </p>
-            <p>${score}</p>
+            <p class="score-actual">${score}</p>
             <button onclick="scoreTotal">I FINISHED<button>
             `
             
         }else{
             pregunta.innerHTML =`
             <div class="contenedor-preguntas">
-                <h2 class="pregunta-titulo">QUESTION!</h2>
+                <h2 class="pregunta-titulo">Q U E S T I O N !</h2>
                 <div class= "preguntas-centradas">
                     <label class="espacio-botton" for="" id="preguntaVaria">${questions[i].question}</label>
                     
@@ -73,7 +73,7 @@ const showQuestion = () => {
                 </div>
             </div>
             <p>Let's go! your escore is: </p>
-            <p>${score}</p>
+            <p class="score-actual">${score}</p>
             <button onclick="scoreTotal">I FINISHED<button>
             `
         }
@@ -113,9 +113,15 @@ const valorRespuesta = button => {
         pregunta.innerHTML ="";
         console.log (`your score is ${score}`)
         if(score > 5){
-            pregunta.innerHTML =`hey you can feel good your score is ${score}`
+            pregunta.innerHTML =`<div class="score-total">
+            <p claas="letra-score">your score is:</p>
+            <p class="letra-score">${score}</p>
+            </div>`
         }else{
-            pregunta.innerHTML=`oh no, you need to practice more your score is ${score}`
+            pregunta.innerHTML=`<div class="score-total">
+            <p claas="letra-score">your score is:</p>
+            <p class="letra-score">${score}</p>
+            </div>`
         }
     }
 }
