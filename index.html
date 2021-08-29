@@ -3,7 +3,7 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
+    <title>SUPER TRIVIA</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     
@@ -24,7 +24,7 @@
             
             <label for="category">Select Category:</label>
             <select name="" id="category" class="box-selection">
-                <option value="any">Any</option>
+                <option value="0">Any</option>
                 <option value="9">General knowledge</option>
                 <option value="10">Entertainment: Books</option>
                 <option value="11">Entertainment: Film</option>
@@ -51,36 +51,27 @@
                 <option value="32">Entertainment: Cartoon & Animations</option>            
             </select>
 
-            <label for="difficulty">Select Category:</label>
+            <label for="difficulty">Select Difficulty:</label>
             <select name="" id="difficulty" class="box-selection">
-                <option value="any">Any Difficulty</option>
+                <option value="0">Any Difficulty</option>
                 <option value="easy">Easy</option>
                 <option value="medium">Medium</option>
                 <option value="hard">Hard</option>
             </select>
 
-            <label for="type">Select Category:</label>
+            <label for="type">Select Type:</label>
             <select name="" id="type" class="box-selection">
-                <option value="any">Any Type</option>
+                <option value="0">Any Type</option>
                 <option value="multiple">Multiple Choice</option>
                 <option value="boolean">Boolean</option>
             </select>
 
             <input type="submit" value="Go!" id="formButton" onclick="saleHoja()"/>
         </form>
-        <form action="" class="pregunta" id="pregunta" >
-            <h2 class="pregunta-titulo">QUESTION!</h2>
-            <label class="espacio-botton" for="">"Who is the frontman of Muse?"</label>
-            <select class="espacio-botton" name="" id="">
-                <option value="Demolition">Demolition</option>
-                <option value="The Dream Team">The Dream Team</option>
-                <option value="The Bushwhackers">The Bushwhackers</option>
-                <option value="The British Bulldogs">The British Bulldogs</option>
-            </select>
-            <div class="contenedor-flechas">
-                <div class="flecha-izquierda"><img src="../trivia/flecha-izquierda.svg" alt="flecha-izquierda" class="flechas"> previous</div>
-                <div class="flecha-derecha"><img src="../trivia/flecha-derecha.svg" alt="flecha-derecha" class="flechas"> next</div>
-            </div>
+        <form action="" class="pregunta" id="pregunta">
+      
+            
+            
         </form>
     </div>
     <script src='agregar.js'></script>

@@ -2,6 +2,7 @@
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
+    font-size: medium;
 }
 
 header{
@@ -30,7 +31,7 @@ header{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: blue;
+    
     padding: 3vh;
 }
 .box-selection{
@@ -39,11 +40,7 @@ header{
 
 .pregunta{
     display: none;
-    position: fixed;
-    background-color: black;
-    z-index: 900;
-    width: 100vw;
-    height: 100vh;
+    
 }
 
 .pregunta.agrego{
@@ -61,7 +58,7 @@ header{
 
 .contenedor-flechas{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     width: 30vh;
 
 }
@@ -85,4 +82,39 @@ header{
 
 .espacio-botton{
     margin-bottom: 10px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
 }
+.boton-under{
+    display: flex;
+    
+}
+.boton{
+    background-color: wheat;
+    padding: 2vh;
+    
+    margin-bottom: 0;
+}
+
+.contenedor-preguntas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: wheat;
+    width: 70vh;
+}
+
+p{
+    margin-top: 2vh;
+}
+label{
+    font-size: medium;
+}
+
+.preguntas-centradas{
+    display: flex;
+    flex-direction: column;
+}
+
