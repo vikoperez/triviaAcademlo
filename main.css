@@ -84,7 +84,7 @@ header{
     margin-bottom: 10px;
     color: white;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .boton-under{
     display: flex;
@@ -103,7 +103,7 @@ header{
     justify-content: center;
     align-items: center;
     color: wheat;
-    width: 70vh;
+    width: 80vw;
 }
 
 p{
