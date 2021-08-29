@@ -65,6 +65,7 @@ const showQuestion = () => {
                 <h2 class="pregunta-titulo">QUESTION!</h2>
                 <div class= "preguntas-centradas">
                     <label class="espacio-botton" for="" id="preguntaVaria">${questions[i].question}</label>
+                    
                     <div class="espacio-botton" name="" id="">
                         <button onClick="valorRespuesta(this)">${ans[0]}</button>
                         <button onClick="valorRespuesta(this)">${ans[1]}</button>
@@ -111,6 +112,11 @@ const valorRespuesta = button => {
     else {
         pregunta.innerHTML ="";
         console.log (`your score is ${score}`)
+        if(score > 5){
+            pregunta.innerHTML =`hey you can feel good your score is ${score}`
+        }else{
+            pregunta.innerHTML=`oh no, you need to practice more your score is ${score}`
+        }
     }
 }
 
